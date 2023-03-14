@@ -21,18 +21,15 @@ export const minus: ScalarOperationType = (
   second: number
 ): number => first - second;
 
-export const square: OnlyOperationType = (
-    first: number,
-): number => first ** 2
+export const square: OnlyOperationType = (first: number): number => first ** 2;
 
 export const degree: ScalarOperationType = (
-    first: number,
-    second: number
-): number => first ** second
+  first: number,
+  second: number
+): number => first ** second;
 
-export const factorial: OnlyOperationType = (
-    first: number,
-): number => (first <= 1 ? 1 : first * factorial(first - 1));
+export const factorial: OnlyOperationType = (first: number): number =>
+  first <= 1 ? 1 : first * factorial(first - 1);
 
 export const mathOperators: { [key: string]: ScalarOperationType } = {
   "*": mul,
