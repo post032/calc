@@ -1,5 +1,5 @@
 import { isNumber } from "./helpers";
-import { mathOperators} from "./mathOperators";
+import { mathOperators } from "./mathOperators";
 
 export type ParsedLineType = (number | string)[];
 
