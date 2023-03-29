@@ -1,8 +1,8 @@
 import { parser } from "./parser";
 
 describe("Parser correct cases", () => {
-  it("1 + 32", () => {
-    expect(parser("1 + 32")).toEqual([1, "+", 32]);
+  it("2 ** 4", () => {
+    expect(parser("2 ** 4")).toEqual([2, "**", 4]);
   });
 
   it("11 + 3 * 22", () => {
