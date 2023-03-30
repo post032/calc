@@ -5,7 +5,7 @@ import {
   minus,
   square,
   degree,
-  factorial
+  factorial,
 } from "./mathOperators";
 
 describe("mathOperators test cases", () => {
