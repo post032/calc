@@ -33,6 +33,10 @@ export const degree: ScalarOperationType = (
 export const factorial: UnaryOperationType = (first: number): number =>
   first <= 1 ? 1 : first * factorial(first - 1);
 
+// export const sin: UnaryOperationType = (
+//     first: number
+// ): number => Math.sin((Math.PI / 180) * first);
+
 export const mathOperators: { [key: string]: MathOperatorType } = {
   "*": mul,
   "/": div,
@@ -41,6 +45,7 @@ export const mathOperators: { [key: string]: MathOperatorType } = {
   "^": degree,
   "**": square,
   "!": factorial,
+  // "sin": sin,
 };
 
 export const mathPriorities: number[] = [1, 2];

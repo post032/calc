@@ -5,7 +5,7 @@ import {
   minus,
   square,
   degree,
-  factorial,
+  factorial
 } from "./mathOperators";
 
 describe("mathOperators test cases", () => {
@@ -44,4 +44,8 @@ describe("mathOperators test cases", () => {
   it("factorial 1 * 2 * 3 to equal 6", () => {
     expect(factorial(3)).toBe(6);
   });
+
+  // it("Sin 90", () => {
+  //   expect(sin(90)).toEqual(1);
+  // });
 });
